@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+
+/* CLASES UTILITARIAS*/
+
+.btn{
+    color: tomato;
+    background-color: palegreen;
+    padding: 1rem;
+    display: inline-block;
+    margin-top: 1rem;
+    font-family: 'Arvo', serif;
+}
+
+/* FIN CLASES UTILITARIAS*/
+
+/* HEADER */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0.5rem;
+}
+
+.header__logo{
+    max-width: 150px;
+}
+
+.header__item{
+    display: inline-block;
+    padding: 1rem 0.5rem;
+    background-color: red;
+    margin: 1rem;
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* HEADER FIN */
+
+/* HERO */
+
+.hero{
+    background-image: url(../../img/ruta16home.jpg);
+    height: 85vh;
+    position: relative;
+}
+
+.hero__wrapper{
+    position: absolute;
+    top: 20%;
+    left: 2rem;
+}
+
+.hero__titulo{
+    color: blue;
+    font-size: 3rem;
+    font-family: 'Arvo', serif;
+}
+
+.hero__slogan{
+    color: green;
+    font-size: 1.5rem;
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* HERO FIN */
+
+.mod{
+    color: black;
+    width: 33%;
+    background-color: pink;
+    overflow: hidden;
+    display: inline-block;
+    padding: 1rem;
+}
+
+.mod__img{
+    width: 100%;
+}
+
+.mod__titulo{
+    font-family: 'Arvo', serif;
+}
+
+.mod__desc{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px){
+
+}
