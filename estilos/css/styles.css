@@ -4,6 +4,10 @@
     box-sizing: border-box ;
 }
 
+:root{
+    font-size: 20px;
+}
+
 /* CLASES UTILITARIAS*/
 
 .btn{
