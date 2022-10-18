@@ -23,7 +23,7 @@
 
 /* HEADER */
 
-.header {
+.header{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -158,6 +158,11 @@
 }
 
 /* FIN FOOTER */
+
+.form{
+    font-family: "Antenna", sans-serif;
+    margin: 3rem;
+}
 
 @media screen and (max-width: 768px){
 

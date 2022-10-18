@@ -12,23 +12,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="./estilos/css/styles.css">f
+    <link rel="stylesheet" href="../estilos/css/styles.css">
 
 </head>
 <body>
-    <header>
-        <a href="#"><img src="../img/Route-16_logo.png" alt="LOGO DE LA EMPRESA"></a>
-        <ul>
-            <li><a href="../index.html">INICIO</a></li>
-            <li><a href="catalogo.html">CATALOGO</a></li>
-            <li><a href="#">CONTACTO</a></li>
-            <li><a href="nosotros.html">NOSOTROS</a></li>
-            <li><a href="sucursarles.html">SUCURSALES</a></li>     
-        </ul>
+    <header class="header">
+        <a href="#"><img src="../img/Route-16_logo.png" class="header__logo" alt="LOGO DE LA EMPRESA"></a>
+        <nav class="header__nav">
+            <ul>
+                <li class="header__item"><a class="header__anchor" href="../index.html">INICIO</a></li>
+                <li class="header__item"><a class="header__anchor" href="catalogo.html">CATALOGO</a></li>
+                <li class="header__item"><a class="header__anchor" href="sucursarles.html">SUCURSALES</a></li>
+                <li class="header__item"><a class="header__anchor" href="nosotros.html">NOSOTROS</a></li>
+                <li class="header__item"><a class="header__anchor" href="#">CONTACTO</a></li>
+            </ul>
+        </nav>
     </header>
     <hr>
 
-    <form action="" method="get" enctype="text/plain">
+    <form class="form" action="" method="get" enctype="text/plain">
         <fieldset>
             <legend>Informacion Personal</legend>
             <div>
@@ -44,38 +46,24 @@
                 <input type="email" name="email" id="email" required placeholder="Introduzca su mail">
             </div>
             <div>
-                <label for="date">Fecha de Nacimiento</label>
-                <input type="date" name="date" id="date" min="2004-03-16">
+
             </div>
             <div>
-                <strong>Genero</strong>
-                <div>
-                    <label for="male">Masculino</label>
-                    <input type="radio" name="gender" id="male" value="male">
-                </div>
-                <div>
-                    <label for="female">Femenino</label>
-                    <input type="radio" name="gender" id="female" value="female" required>
-                </div>
-                <div>
-                    <label for="password">CONTRASEÑA</label>
-                    <input type="password" name="password" id="password" required placeholder="ingrese su contraseña">
-                </div>
-            </div>
-            <div>
-                <input type="submit" value="Enviar Formulario">
-                <input type="reset" value="Vaciar Formulario">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Vaciar">
             </div>
         </fieldset>
     </form>
 
-    <footer>
-        <ul>
-            <li><a href="https://www.instagram.com/juanma_rubino/?hl=es-la">INSTAGRAM</a></li>
-            <div>
-                <li><a href="https://twitter.com/juanmarubino1">TWITTER</a></li>
-            </div>
-        </ul>
+    <footer class="footer">
+        <img src="../img/Route-16_logo.png" alt="logo" class="footer__logo">
+        <div>
+            <h5 class="footer__h5">Seguinos!</h5>
+        </div>
+        <div class="footer__redes">
+            <a href="https://www.instagram.com/juanma_rubino/?hl=es-la" class="footer__anchor"></a>
+        </div>
+        <span class="footer__span">&copy; 2022, Route 16 Concesionaria. All rights reserved.</span>
     </footer>
 
 </body>
