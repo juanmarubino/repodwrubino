@@ -137,11 +137,13 @@ a{
 
 /*NOSOTROS*/
 
-.nosotros{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.nosotros {
+    display: flex;
     padding: 2rem;
-    height: 100vh;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .nosotros__wrapper{
@@ -154,6 +156,14 @@ a{
     font-size: 4rem;
     color: rgb(43, 45, 66);
     text-align: center;
+}
+
+.personal {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .personal__boss{
@@ -249,26 +259,42 @@ a{
 .catalogo__titulo{
     font-family: 'Arvo', serif;
     font-size: 4rem;
-    color: rgb(43, 45, 66)
+    color: rgb(43, 45, 66);
+    margin-top: 2rem;
 }
 
 .catalogo__modelos{
     color: rgb(239, 35, 60);
     font-family: "Antenna", sans-serif;
+    padding: 1rem;
 }
 
-.autos{
+.autos {
     font-family: "Antenna", sans-serif;
     text-decoration: none;
     color: black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem;
+    height: 100vh;
+    grid-template-rows: repeat(2, 1fr);
+    background-image: url(../../img/audilogo.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 200px;
 }
 
-.autos__div{
-    width: 33%;
+.autos__div {
+    width: 100%;
     overflow: hidden;
-    display: inline-block;
-    padding: 4rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 4rem;
 }
+
 
 .autos__hr{
     height: 1rem;
@@ -279,6 +305,7 @@ a{
     display: flex;
     justify-content: center;
     color: rgb(22, 22, 22);
+    padding: 1rem;
 }
 
 .autos__btn:hover{
