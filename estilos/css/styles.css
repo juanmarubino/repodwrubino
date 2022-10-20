@@ -276,7 +276,7 @@ a{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 2rem;
-    height: 100vh;
+    /*height: 100vh;*/
     grid-template-rows: repeat(2, 1fr);
     background-image: url(../../img/audilogo.png);
     background-repeat: no-repeat;
@@ -313,7 +313,14 @@ a{
 }
 
 
+/*SUCURSALES*/
 
+.con__h1{
+    font-family: "Arvo", serif;
+    font-size: 4rem;
+    color: rgb(43, 45, 66);
+    margin-top: 1rem;
+}
 
 
 /*CONTACTO*/
@@ -323,14 +330,122 @@ a{
     margin: 3rem;
 }
 
+
+/*MEDIA QUERIES*/
+
 @media screen and (max-width: 320px){
     .header{
         flex-direction: column;
     }
+
+    .header__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    .header__item {
+        display: inline-block;
+        padding: 1rem 0.5rem;
+        font-family: 'Antenna', sans-serif;
+        color: white;
+        text-decoration: none;
+        margin: 0;
+    }
+
+    .hero {
+        background-image: url(../../img/ruta16home.jpg);
+        height: 90vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .hero__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero__titulo {
+        color: rgb(237, 242, 244);
+        font-size: 1.9rem;
+        font-family: 'Arvo', serif;
+        text-align: center;
+    }
+
+    .hero__slogan {
+        color: rgb(237, 242, 244);
+        font-size: 1.5rem;
+        font-family: 'Antenna', sans-serif;
+        text-align: center;
+    }
+
+    .modelos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mod {
+        color: black;
+        width: 100%;
+        overflow: hidden;
+        display: inline-block;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .catalogo__titulo {
+        font-family: 'Arvo', serif;
+        font-size: 3.3rem;
+        color: rgb(43, 45, 66);
+        margin-top: 2rem;
+    }
+
+    .autos {
+        font-family: "Antenna", sans-serif;
+        text-decoration: none;
+        color: black;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        background-image: url(../../img/audilogo.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 200px;
+    }
+
+    .footer__span {
+        color: white;
+        font-family: 'Antenna', sans-serif;
+        text-align: center;
+    }
 }
 
-@media screen and (max-width: 768px){
-    .header{
+@media screen and (max width: 768px){
+    .header__list {
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
         flex-direction: row;
+    }
+
+    .header__anchor {
+        color: white;
+        font-size: 15px;
+    }
+
+    .mod {
+        color: black;
+        width: 100%;
+        overflow: hidden;
+        display: inline-block;
+        padding: 1rem;
     }
 }
