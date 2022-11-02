@@ -11,15 +11,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&family=PT+Sans&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="../estilos/css/styles.css">
 
 </head>
 <body>
     <header class="header">
-        <a href="#"><img src="../img/Route-16_logo.png" class="header__logo" alt="LOGO DE LA EMPRESA"></a>
+        <a href="../index.html"><img src="../img/Route-16_logo.png" class="header__logo" alt="LOGO DE LA EMPRESA"></a>
         <nav class="header__nav">
-            <ul>
+            <ul class="header__list">
                 <li class="header__item"><a class="header__anchor" href="../index.html">INICIO</a></li>
                 <li class="header__item"><a class="header__anchor" href="catalogo.html">CATALOGO</a></li>
                 <li class="header__item"><a class="header__anchor" href="sucursarles.html">SUCURSALES</a></li>
@@ -30,31 +31,34 @@
     </header>
     <hr>
 
-    <form class="form" action="" method="get" enctype="text/plain">
-        <fieldset>
-            <legend>Informacion Personal</legend>
-            <div>
-                <label for="name">Nombre</label>
-                <input type="text" name="name" id="name" required placeholder="Introduzca su nombre">
-            </div>
-            <div>
-                <label for="surname">Apellido</label>
-                <input type="text" name="surname" id="surname" required placeholder="Introduzca su apellido">
-            </div>
-            <div>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" required placeholder="Introduzca su mail">
-            </div>
-            <div>
-
-            </div>
-            <div>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Vaciar">
-            </div>
-        </fieldset>
-    </form>
-
+    <section class="estructura">
+        <form class="form" action="" method="get" enctype="text/plain">
+            <fieldset>
+                <legend class="form__heading">Contactenos!</legend>
+                <div class="form__div">
+                    <label class="form__label" for="name">Nombre</label>
+                    <input type="text" name="name" id="name" required placeholder="Introduzca su nombre">
+                </div>
+                <div class="form__div">
+                    <label class="form__label" for="surname">Apellido</label>
+                    <input type="text" name="surname" id="surname" required placeholder="Introduzca su apellido">
+                </div>
+                <div class="form__div">
+                    <label class="form__label" for="email">Email</label>
+                    <input type="email" name="email" id="email" required placeholder="Introduzca su mail">
+                </div>
+                <div class="form__div">
+                    <label class="form__label" for="consulta">Escriba su consulta</label>
+                    <textarea name="consulta" id="consulta" required placeholder="Escriba aqui su consulta"></textarea>
+                </div>
+                <div class="form__div">
+                    <input type="submit" value="Enviar" class="form__input">
+                    <input type="reset" value="Vaciar" class="form__input" >
+                </div>
+            </fieldset>
+        </form>
+        <img src="../img/cliente.jpg" alt="at al cliente" class="form__img">
+    </section>
     <footer class="footer">
         <img src="../img/Route-16_logo.png" alt="logo" class="footer__logo">
         <div>

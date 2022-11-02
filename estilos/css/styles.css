@@ -191,6 +191,30 @@ a{
     color: black;
 }
 
+.historia {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.sec__title{
+    font-family: "Arvo", serif;
+    font-size: 4rem;
+    color: rgb(43, 45, 66);
+    text-align: start;
+    margin-left: 3rem;
+}
+
+.historia__div{
+    display: flex;
+}
+
+.historia__desc{
+    font-family: "Antenna", sans-serif;
+    text-align: center;
+    color: black;
+}
+
 .nos-hr{
     height: 20px;
     background-color: rgb(239, 35, 60);
@@ -329,11 +353,48 @@ a{
 
 /*CONTACTO*/
 
+.estructura{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
 .form{
     font-family: "Antenna", sans-serif;
     margin: 3rem;
+    display: flex;
+    justify-content: center;
 }
 
+fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__heading{
+    font-family: "Arvo", serif;
+    font-size: 3rem;
+    color: rgb(43, 45, 66);
+}
+
+.form__div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+}
+
+.form__label {
+    padding: 4px;
+}
+
+.form__input {
+    font-size: 24px;
+}
 
 /*MEDIA QUERIES*/
 
@@ -425,6 +486,35 @@ a{
         background-size: 200px;
     }
 
+    .con__h1 {
+        font-family: "Arvo", serif;
+        font-size: 2rem;
+        color: rgb(43, 45, 66);
+        margin-top: 1rem;
+    }
+
+    .sec__title {
+        font-family: "Arvo", serif;
+        font-size: 2rem;
+        color: rgb(43, 45, 66);
+        text-align: start;
+        margin-left: 3rem;
+    }
+
+    .estructura {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+    }
+
+    .form__heading {
+        font-family: "Arvo", serif;
+        font-size: 2rem;
+        color: rgb(43, 45, 66);
+    }
+
     .footer__span {
         color: white;
         font-family: 'Antenna', sans-serif;
@@ -432,17 +522,11 @@ a{
     }
 }
 
-@media screen and (max width: 768px){
-    .header__list {
-        display: flex;
-        justify-content: flex-end;
-        flex-wrap: wrap;
-        flex-direction: row;
-    }
+@media screen and (max-width: 768px){
+    
 
     .header__anchor {
         color: white;
-        font-size: 15px;
     }
 
     .mod {
@@ -451,5 +535,38 @@ a{
         overflow: hidden;
         display: inline-block;
         padding: 1rem;
+    }
+
+    .autos__img {
+        width: 100%;
+    }
+
+    .con__h1 {
+        font-family: "Arvo", serif;
+        font-size: 3.5rem;
+        color: rgb(43, 45, 66);
+        margin-top: 1rem;
+    }
+
+    .sec__title {
+        font-family: "Arvo", serif;
+        font-size: 3rem;
+        color: rgb(43, 45, 66);
+        text-align: start;
+        margin-left: 3rem;
+    }
+
+    .estructura {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1024px){
+
+    .form__img {
+        width: 47%;
     }
 }
