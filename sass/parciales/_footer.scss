@@ -1,0 +1,41 @@
+.footer{
+    padding: 1rem;
+    background-color: rgb(22, 22, 22);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &__logo{
+        height: 80px;
+        margin-bottom: 0.5rem;
+    }
+    &__h5{
+        font-family: 'Antenna', sans-serif;
+        color: white;
+    }
+    &__redes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+    }
+    &__anchor{
+        height: 50px;
+        width: 50px;
+        border-radius: 50px;
+        border: 1px solid white;
+        background-image: url(../../img/igblanco.png);
+        background-position: center;
+        background-size: 40%;
+        background-repeat: no-repeat;
+        margin: 1rem;
+    }
+    &__anchor:hover{
+        background-color: black;
+    }
+    &__span{
+        color: white;
+        font-family: 'Antenna', sans-serif;
+    }
+}

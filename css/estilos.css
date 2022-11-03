@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+:root {
+  font-size: 20px; }
+
+.btn {
+  color: black;
+  background-color: white;
+  padding: 1rem;
+  display: inline-block;
+  margin-top: 1rem;
+  font-family: 'Arvo', serif;
+  transition: 2s; }
+
+.btn:hover {
+  background-color: #ef233c;
+  font-size: 1.5rem; }
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 1rem;
+  background-color: #161616; }
+
+.header__logo {
+  max-width: 110px; }
+
+.header__item {
+  display: inline-block;
+  padding: 1rem 0.5rem;
+  margin: 1rem;
+  font-family: 'Antenna', sans-serif;
+  color: white;
+  text-decoration: none; }
+
+.header__anchor {
+  color: white; }
+
+.header__anchor:hover {
+  color: #ef233c; }
+
+.header__anchor--activo {
+  color: #ef233c; }
+
+.hero {
+  background-image: url(../../img/ruta16home.jpg);
+  height: 90vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1.5rem; }
+  .hero__titulo {
+    color: #edf2f4;
+    font-size: 4rem;
+    font-family: 'Arvo', serif; }
+  .hero__slogan {
+    color: #edf2f4;
+    font-size: 1.5rem;
+    font-family: 'Antenna', sans-serif; }
+
+.modelos__titulo {
+  font-family: 'Arvo', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  background-color: #ef233c;
+  color: white; }
+
+.mod {
+  color: black;
+  width: 33%;
+  overflow: hidden;
+  display: inline-block;
+  padding: 1rem; }
+  .mod__img {
+    width: 100%; }
+  .mod__titulo {
+    font-family: 'Arvo', serif; }
+  .mod__desc {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.2rem; }
+
+.nosotros {
+  display: flex;
+  padding: 2rem;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center; }
+  .nosotros__wrapper {
+    display: flex;
+    align-items: center; }
+  .nosotros__heading {
+    font-family: "Arvo", serif;
+    font-size: 4rem;
+    color: #2b2d42;
+    text-align: center; }
+
+.personal {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center; }
+  .personal__boss {
+    font-family: "Antenna", sans-serif;
+    color: #ef233c;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline; }
+  .personal__img {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 3rem; }
+  .personal__dsc {
+    font-family: "Antenna", sans-serif;
+    text-align: center;
+    color: black; }
+
+.sec__title {
+  font-family: "Arvo", serif;
+  font-size: 4rem;
+  color: #2b2d42;
+  text-align: start;
+  margin-left: 3rem; }
+
+.historia {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+  .historia__div {
+    display: flex; }
+  .historia__desc {
+    font-family: "Antenna", sans-serif;
+    text-align: center;
+    color: black; }
+
+.catalogo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .catalogo__titulo {
+    font-family: 'Arvo', serif;
+    font-size: 4rem;
+    color: #2b2d42;
+    margin-top: 2rem; }
+  .catalogo__modelos {
+    color: #ef233c;
+    font-family: "Antenna", sans-serif;
+    padding: 1rem; }
+
+.autos {
+  font-family: "Antenna", sans-serif;
+  text-decoration: none;
+  color: black;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 2rem;
+  /*height: 100vh;*/
+  grid-template-rows: repeat(2, 1fr);
+  background-image: url(../../img/audilogo.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 200px; }
+  .autos__div {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 4rem; }
+  .autos__hr {
+    height: 1rem;
+    background-color: #ef233c; }
+  .autos__btn {
+    display: flex;
+    justify-content: center;
+    color: #161616;
+    padding: 1rem;
+    transition: 1s; }
+  .autos__btn:hover {
+    color: #ef233c;
+    font-size: 1.5rem; }
+
+.con__h1 {
+  font-family: "Arvo", serif;
+  font-size: 4rem;
+  color: #2b2d42;
+  margin-top: 1rem; }
+
+.estructura {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center; }
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.form {
+  font-family: "Antenna", sans-serif;
+  margin: 3rem;
+  display: flex;
+  justify-content: center; }
+  .form__heading {
+    font-family: "Arvo", serif;
+    font-size: 3rem;
+    color: #2b2d42; }
+  .form__div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem; }
+  .form__label {
+    padding: 4px; }
+  .form__input {
+    font-size: 24px; }
+
+.footer {
+  padding: 1rem;
+  background-color: #161616;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .footer__logo {
+    height: 80px;
+    margin-bottom: 0.5rem; }
+  .footer__h5 {
+    font-family: 'Antenna', sans-serif;
+    color: white; }
+  .footer__redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem; }
+  .footer__anchor {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid white;
+    background-image: url(../../img/igblanco.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin: 1rem; }
+  .footer__anchor:hover {
+    background-color: black; }
+  .footer__span {
+    color: white;
+    font-family: 'Antenna', sans-serif; }
+
+@media screen and (max-width: 320px) {
+  .header {
+    flex-direction: column; }
+  .header__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 0; }
+  .header__item {
+    display: inline-block;
+    padding: 1rem 0.5rem;
+    font-family: 'Antenna', sans-serif;
+    color: white;
+    text-decoration: none;
+    margin: 0; }
+  .hero {
+    background-image: url(../../img/ruta16home.jpg);
+    height: 90vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem; }
+  .hero__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .hero__titulo {
+    color: #edf2f4;
+    font-size: 1.9rem;
+    font-family: 'Arvo', serif;
+    text-align: center; }
+  .hero__slogan {
+    color: #edf2f4;
+    font-size: 1.5rem;
+    font-family: 'Antenna', sans-serif;
+    text-align: center; }
+  .modelos {
+    display: flex;
+    flex-direction: column; }
+  .mod {
+    color: black;
+    width: 100%;
+    overflow: hidden;
+    display: inline-block;
+    padding: 1rem;
+    text-align: center; }
+  .catalogo__titulo {
+    font-family: 'Arvo', serif;
+    font-size: 3.3rem;
+    color: #2b2d42;
+    margin-top: 2rem; }
+  .autos {
+    font-family: "Antenna", sans-serif;
+    text-decoration: none;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    background-image: url(../../img/audilogo.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 200px; }
+  .con__h1 {
+    font-family: "Arvo", serif;
+    font-size: 2rem;
+    color: #2b2d42;
+    margin-top: 1rem; }
+  .sec__title {
+    font-family: "Arvo", serif;
+    font-size: 2rem;
+    color: #2b2d42;
+    text-align: start;
+    margin-left: 3rem; }
+  .estructura {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center; }
+  .form__heading {
+    font-family: "Arvo", serif;
+    font-size: 2rem;
+    color: #2b2d42; }
+  .footer__span {
+    color: white;
+    font-family: 'Antenna', sans-serif;
+    text-align: center; } }
+
+@media screen and (max-width: 768px) {
+  .header__anchor {
+    color: white; }
+  .mod {
+    color: black;
+    width: 100%;
+    overflow: hidden;
+    display: inline-block;
+    padding: 1rem; }
+  .autos__img {
+    width: 100%; }
+  .con__h1 {
+    font-family: "Arvo", serif;
+    font-size: 3.5rem;
+    color: #2b2d42;
+    margin-top: 1rem; }
+  .sec__title {
+    font-family: "Arvo", serif;
+    font-size: 3rem;
+    color: #2b2d42;
+    text-align: start;
+    margin-left: 3rem; }
+  .estructura {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center; } }
+
+@media screen and (max-width: 1024px) {
+  .form__img {
+    width: 47%; } }

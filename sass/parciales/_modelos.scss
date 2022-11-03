@@ -1,0 +1,27 @@
+.modelos__titulo{
+    font-family: 'Arvo', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    background-color: rgb(239, 35, 60);
+    color: white;
+}
+
+.mod{
+    color: black;
+    width: 33%;
+    overflow: hidden;
+    display: inline-block;
+    padding: 1rem;
+    &__img{
+        width: 100%;
+    }
+    &__titulo{
+        font-family: 'Arvo', serif;
+    }
+    &__desc{
+        font-family: 'PT Sans', sans-serif;
+        font-size: 1.2rem;
+    }
+}

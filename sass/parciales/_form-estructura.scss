@@ -1,0 +1,36 @@
+.estructura{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form{
+    font-family: "Antenna", sans-serif;
+    margin: 3rem;
+    display: flex;
+    justify-content: center;
+    &__heading{
+        font-family: "Arvo", serif;
+        font-size: 3rem;
+        color: rgb(43, 45, 66);
+    }
+    &__div{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+    &__label {
+        padding: 4px;
+    }
+    &__input {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,17 @@
+.catalogo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__titulo{
+        font-family: 'Arvo', serif;
+        font-size: 4rem;
+        color: rgb(43, 45, 66);
+        margin-top: 2rem;
+    }
+    &__modelos{
+        color: rgb(239, 35, 60);
+        font-family: "Antenna", sans-serif;
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,27 @@
+.personal {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    &__boss{
+        font-family: "Antenna", sans-serif;
+        color: rgb(239, 35, 60);
+        font-size: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: underline;
+    }
+    &__img{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding: 3rem;
+    }
+    &__dsc{
+        font-family: "Antenna", sans-serif;
+        text-align: center;
+        color: black;
+    }
+}

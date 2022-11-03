@@ -1,0 +1,33 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 1rem;
+    background-color: rgb(22, 22, 22);
+}
+
+.header__logo{
+    max-width: 110px;
+}
+
+.header__item{
+    display: inline-block;
+    padding: 1rem 0.5rem;
+    margin: 1rem;
+    font-family: 'Antenna', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+.header__anchor{
+    color: white;
+}
+
+.header__anchor:hover{
+    color: rgb(239, 35, 60);
+}
+
+.header__anchor--activo{
+    color: rgb(239, 35, 60);
+}
