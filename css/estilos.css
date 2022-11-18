@@ -365,6 +365,16 @@ fieldset {
     text-align: center; } }
 
 @media screen and (max-width: 768px) {
+  .header__list {
+    display: flex;
+    flex-direction: column; }
+  .header__item {
+    display: inline-block;
+    padding: 0.5rem 0.5rem !important;
+    margin: 0;
+    font-family: 'Antenna', sans-serif;
+    color: white;
+    text-decoration: none; }
   .header__anchor {
     color: white; }
   .mod {
@@ -382,7 +392,7 @@ fieldset {
     margin-top: 1rem; }
   .sec__title {
     font-family: "Arvo", serif;
-    font-size: 3rem;
+    font-size: 2rem;
     color: #2b2d42;
     text-align: start;
     margin-left: 3rem; }
